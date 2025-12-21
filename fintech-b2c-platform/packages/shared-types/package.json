@@ -1,0 +1,17 @@
+{
+  "name": "@carteira-digital/shared-types",
+  "version": "1.0.0",
+  "description": "Tipos TypeScript compartilhados",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

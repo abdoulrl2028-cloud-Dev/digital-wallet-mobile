@@ -1,0 +1,56 @@
+{
+  "name": "@carteira-digital/backend-api",
+  "version": "1.0.0",
+  "description": "API backend da carteira digital",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src",
+    "migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:seed": "ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-validator": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3",
+    "prisma": "^4.14.0",
+    "@prisma/client": "^4.14.0",
+    "axios": "^1.4.0",
+    "redis": "^4.6.0",
+    "bull": "^4.11.0",
+    "class-validator": "^0.14.0",
+    "class-transformer": "^0.5.1",
+    "pino": "^8.13.0",
+    "uuid": "^9.0.0",
+    "@carteira-digital/shared-types": "*",
+    "@carteira-digital/shared-utils": "*"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "eslint": "^8.40.0",
+    "@testing-library/node": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
